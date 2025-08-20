@@ -1,13 +1,11 @@
-import os
-from pathlib import Path    
+import os   
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn import linear_model, model_selection
 
 def main():
-    current_directory = os.getcwd() 
-   
-    df = pd.read_csv(os.path.join(current_directory, "Car_Price_Prediction.csv"))
+  
+    df = pd.read_csv(os.path.join("../../Data", "Car_Price_Prediction.csv"))
     print(df.info())
     print(df.head())
     #siz = df.size - gives total cells
